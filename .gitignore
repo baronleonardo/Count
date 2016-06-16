@@ -1,2 +1,2 @@
-build-Names-64bit-Debug\*
+build-*-64bit-Debug\*
 *.pro.user
