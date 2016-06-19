@@ -3,5 +3,5 @@ build-Count-64bit-Debug/*
 debug/*
 release/*
 Makefile*
-names_plugin_import.cpp
+*_plugin_import.cpp
 ui_*
