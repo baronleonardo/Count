@@ -1,2 +1,6 @@
 build-Count-64bit-Debug/*
 *.pro.user
+debug/*
+release/*
+Makefile*
+names_plugin_import.cpp
