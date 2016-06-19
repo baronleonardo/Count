@@ -4,3 +4,4 @@ debug/*
 release/*
 Makefile*
 names_plugin_import.cpp
+ui_*
