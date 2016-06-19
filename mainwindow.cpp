@@ -5,6 +5,8 @@
 #include <QStringList>
 #include <QFileDialog>
 
+#include <QTextStream>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -53,8 +55,11 @@ void MainWindow::on_browse_btn_clicked()
     QFile file( file_path );
     file.open( QIODevice::ReadOnly | QIODevice::Text );
 
-    ui->textEdit->setText(file.readAll());
+    QTextStream text_stream( &file );
+
+    QString content = text_stream.readAll();
+
+    ui->textEdit->setText(content);
 
     file.close();
-
 }
